@@ -1,0 +1,62 @@
+:root {
+  /* Colors Palette --------------------------------------------------------- */
+  --ultraSoftScript: #fff;
+  --softScript: #f0f0f0;
+  --mediumScript: #cdd7e0;
+  --darkScript: #606971;
+  --primary: #1c75bb;
+  --secondary: #ffd043;
+  --success: #12c377;
+  --info: #d8e0e6;
+  --warning: #be4e5c;
+  --dark: #4a4a4a;
+
+  /* Colors  ---------------------------------------------------------------- */
+  --bg-color: var(--mediumScript);
+  --text-color: var(--primary);
+
+  /* Durations  ------------------------------------------------------------- */
+
+  /* Main duration */
+  --duration: 0.25;
+
+  /* Duration variants */
+  --duration--none: calc(var(--duration) * 0);
+  --duration--fast: calc(var(--duration) / 2);
+  --duration--normal: var(--duration);
+  --duration--slow: calc(var(--duration) * 2);
+
+  /* Fonts ------------------------------------------------------------------ */
+  --fontSize-xxsmall: 10px;
+  --fontSize-xsmall: 12px;
+  --fontSize-small: 14px;
+  --fontSize-base: 16px;
+  --fontSize-medium: 18px;
+  --fontSize-large: 20px;
+  --fontSize-xlarge: 24px;
+  --fontSize-xxlarge: 36px;
+  --fontSize-xxxlarge: 60px;
+  --lineHeight-base-headings: 1.16;
+  --lineHeight-base-body: 1.25;
+
+  /* Normal 400 | Semi-Bold 600 | Bold 700 */
+  --fontFamily-base: "Open Sans", sans-serif;
+
+  /* Spacing ---------------------------------------------------------------- */
+  --spacing-tiny: calc(var(--spacing-base) * 0.25);
+  --spacing-mini: calc(var(--spacing-base) * 0.5);
+  --spacing-base: 20px;
+  --spacing-medium: calc(var(--spacing-base) + var(--spacing-base) * 0.5);
+  --spacing-large: calc(var(--spacing-base) * 2);
+  --spacing-xlarge: calc(var(--spacing-base) * 4);
+
+  /* Boder Radius ----------------------------------------------------------- */
+  --borderRadius-mini: calc(var(--borderRadius-base) * 0.5);
+  --borderRadius-base: 5px;
+  --borderRadius-large: calc(var(--borderRadius-base) * 2);
+}
+
+/* Custom Media ------------------------------------------------------------- */
+@custom-media --sm-viewport (min-width:320px);
+@custom-media --md-viewport (min-width:600px);
+@custom-media --lg-viewport (min-width:960px);
