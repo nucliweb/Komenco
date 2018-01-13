@@ -8,7 +8,7 @@
 
 ## Motivación
 
-En muchas ocasiones quiero empezar un proyecto personal, probar una idea o hacer algun test de una nueva funcionalidad de CSS, SVG, PostCSS, Animación o jugar con [P5.js](https://p5js.org/).
+En muchas ocasiones quiero empezar un proyecto personal, probar una idea o hacer algún test de una nueva funcionalidad de CSS, SVG, PostCSS, Animación o jugar con [P5.js](https://p5js.org/).
 
 También es un proyecto que me permitirá probar y aprender nuevas metodologías de desarrollo.
 
