@@ -1,5 +1,5 @@
 # ToDo
 
-- [ ] Paquete Komenzo-P5js
-- [ ] Paquete Komenzo-Threejs
-- [ ] Paquete Komenzo-WebAnimations
+- [ ] Paquete Komenco-P5js
+- [ ] Paquete Komenco-Threejs
+- [ ] Paquete Komenco-WebAnimations
