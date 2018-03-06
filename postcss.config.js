@@ -12,6 +12,7 @@ module.exports = (ctx) => ({
     // 'postcss-nested': {},
     // 'postcss-focus': {},
     // 'css-mqpacker': {},
+    'stylelint': {},
     'postcss-reporter': ctx.env === 'development' ? { clearMessages: true } : false,
     'cssnano': ctx.env === 'production' ? {} : false
   }
