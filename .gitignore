@@ -8,3 +8,4 @@ package-lock.json
 
 # Dependency directories
 node_modules/
+src/css/styles.css.map
