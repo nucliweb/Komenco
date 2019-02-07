@@ -1,10 +1,10 @@
 {
   "name": "komenco",
-  "version": "1.0.0",
-  "description": "Frontend template to start web projects",
+  "version": "1.1",
+  "description": "Frontend boilerplate to start web projects",
   "scripts": {
     "start": "concurrently \"npm run postcss\" \"npm run browser-sync\"",
-    "postcss": "postcss src/css/index.css -o src/css/styles.css -m -w",
+    "postcss": "postcss -e development src/css/index.css -o src/css/styles.css -m -w",
     "browser-sync": "browser-sync start -s 'src' -f 'src/**/*.css, src/**/*.js, src/*.html'",
     "build": "npm run build:css && npm run build:html && npm run build:assets",
     "build:css": "postcss -e production src/css/index.css -o dist/css/styles.css",
@@ -15,36 +15,28 @@
     "phoenix": "rm -rf node_modules && npm install"
   },
   "author": {
-    "name": "Joan Leon",
+    "name": "Joan León",
     "github": "http://github.com/nucliweb",
     "email": "joan.leon@gmail.com",
     "twitter": "@nucliweb"
   },
   "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "concurrently": "^3.5.0",
-    "css-mqpacker": "^6.0.1",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.5.0",
-    "postcss-calc": "^6.0.0",
-    "postcss-cli": "^4.1.0",
-    "postcss-color-function": "^4.0.0",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.1.0",
-    "postcss-devtools": "^1.1.1",
-    "postcss-focus": "^2.0.0",
-    "postcss-for": "^2.1.1",
-    "postcss-import": "^10.0.0",
-    "postcss-load-config": "^1.2.0",
-    "postcss-mixins": "^6.1.0",
-    "postcss-nested": "^2.1.2",
-    "postcss-reporter": "^5.0.0",
-    "stylelint": "^8.0.0",
-    "stylelint-config-standard": "^17.0.0",
-    "stylelint-order": "^0.6.0"
-  },
   "eslintConfig": {
     "extends": "eslint-config-postcss"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.8",
+    "eslint": "^5.13.0",
+    "postcss-cli": "^6.1.1",
+    "postcss-devtools": "^1.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-reporter": "^6.0.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0"
   }
 }
