@@ -4,7 +4,7 @@
   "description": "Frontend template to start web projects",
   "scripts": {
     "start": "concurrently \"npm run postcss\" \"npm run browser-sync\"",
-    "postcss": "postcss src/css/index.css -o src/css/styles.css -m -w",
+    "postcss": "postcss -e development src/css/index.css -o src/css/styles.css -m -w",
     "browser-sync": "browser-sync start -s 'src' -f 'src/**/*.css, src/**/*.js, src/*.html'",
     "build": "npm run build:css && npm run build:html && npm run build:assets",
     "build:css": "postcss -e production src/css/index.css -o dist/css/styles.css",
