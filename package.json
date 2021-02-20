@@ -1,6 +1,6 @@
 {
   "name": "komenco",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "Frontend boilerplate to start web projects",
   "scripts": {
     "start": "concurrently \"npm run postcss\" \"npm run browser-sync\"",
